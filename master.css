@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-color, linear-gradient(135deg, #f0f0f0, #d9d9d9));
+    color: var(--text-color, #000);
+}
+
+.my_money {
+    background-color: var(--primary-color, #007bff);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my_money h2 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+button {
+    background-color: var(--primary-color, #007bff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--hover-color, #0056b3);
+}
+
+button:active {
+    background-color: var(--active-color, #003d7a);
+    box-shadow: none;
+}
+
+#settingsButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+}
+
+#settingsPanel {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#settingsPanel h3 {
+    margin-top: 0;
+}
+
+#settingsPanel select, #settingsPanel button {
+    margin-top: 10px;
+    width: 100%;
+}
